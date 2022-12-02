@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+  }
+
+  body{
+    background-image: url("https://thumbs.dreamstime.com/z/globe-stress-relief-bouncy-ball-over-blurred-blue-water-background-globe-stress-relief-bouncy-ball-over-blurred-blue-water-191610653.jpg");
+    
+  }
+  
+  #head{
+  
+    margin: auto;
+    margin-top: 2%;
+    text-align: center;
+  }
+  
+  h1{
+    font-size: 35px;
+  }
+
+  input{
+    width: 40%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    font-size: 20px;
+  }
+  
+  .flag{
+    height: 175px;
+    width: 100%;
+  }
+  
+  .country {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .countries-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    width: 90%;
+    gap: 40px;
+    margin: auto;
+    height: 100vh;
+    overflow: scroll;
+    height: 65vh;
+    padding-bottom: 2%;
+    padding-top: 2%;
+  }
+  
+  .countries-container > div {
+    border:  1px solid silver;
+    padding: 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+  }
+  
+  
+  .countries-container::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .country > div{
+    display: flex;
+    gap: 10px;
+  }
+  
+  .country img {
+    height: 150px;
+    margin-bottom: 10px;
+    /* border: 1px solid; */
+    width: 100%;
+  }
+  
+  @media all and (min-width: 50px) and (max-width: 320px) {
+    .countries-container {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: auto;
+    }
+  
+  }
+  
+  @media all and (min-width: 321px) and (max-width: 768px) {
+    .countries-container {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: auto;
+    }
+  
+  }
+  
